@@ -30,6 +30,11 @@ def model(X, Y, layers_dims,activation_tuple, learning_rate = 0.01, num_iteratio
             costs.append(cost)
             
     # plot the loss
+    plt.plot(costs)
+    plt.ylabel('cost')
+    plt.xlabel('iterations (per thousand)')
+    plt.title("Learning rate =" + str(learning_rate))
+    plt.show()
 
     
     return parameters
